@@ -11,18 +11,17 @@ import UIKit
 class ViolationsTableViewController: UITableViewController {
 
 	var violations = [Violation]()
-	
-	enum Critical: Int {
-		case critical
-		case notCritical
-		case notApplicable
-	}
-	
+	var uniqueDBA = [String:Any]()
+	var sortedDBAs = [String]()
 	
     override func viewDidLoad() {
         super.viewDidLoad()
 		loadData()
-		dump(violations)
+		for all in violations {
+			uniqueDBA.updateValue(1, forKey: all.dba)
+		}
+		sortedDBAs = Array(uniqueDBA.keys).sorted()
+		dump(uniqueDBA)
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,17 +33,17 @@ class ViolationsTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 3
+        return sortedDBAs.count
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-		guard let critical = Critical.init(rawValue: section), let data = byCrit(critical)
-			else {
-				return 0
+		let incidents = violations.filter { (violation) -> Bool in
+			(violation.dba) == sortedDBAs[section]
 		}
-		return data.count
-    }
+		
+		return incidents.count
+	}
 
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -52,28 +51,21 @@ class ViolationsTableViewController: UITableViewController {
 
         // Configure the cell...
 	
-//		let section = episodes.filter { (episode) -> Bool in
-//			return (episode.season - 1 ) == indexPath.section
-//		}
+		let section = violations.filter { (violation) -> Bool in
+			(violation.dba) == sortedDBAs[indexPath.section]
+		}
 		
-		guard let critical = Critical.init(rawValue: indexPath.section), let data = byCrit(critical) else { return cell }
-		cell.nameLabel.text = data[indexPath.row].dba
-		cell.infoLabel.text = data[indexPath.row].criticalFlag
+		let filtered = section.sorted { $0.inspectionDate < $1.inspectionDate }
+		
+		let data = filtered[indexPath.row]
+		cell.nameLabel.text = data.dba
+		cell.infoLabel.text = data.dateInMMDDYYYY(for: data.inspectionDate)
 		return cell
     }
 	
 	override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-		guard let critical = Critical.init(rawValue: section) else { return "" }
-		switch critical {
-		case .critical:
-			return "Critical"
-		case .notCritical:
-			return "Not Critical"
-		case .notApplicable:
-			return "Not Applicable"
-		}
+		return sortedDBAs[section]
 	}
-
 	
 
     /*
@@ -136,26 +128,4 @@ class ViolationsTableViewController: UITableViewController {
 			}
 		}
 	}
-	
-	func byCrit(_ critical: Critical) -> [Violation]? {
-		let filter: (Violation) -> Bool
-		switch critical {
-		case .critical:
-			filter = { (a) -> Bool in
-				a.criticalFlag == "Critical"
-			}
-		case .notCritical:
-			filter = { (a) -> Bool in
-				a.criticalFlag == "Not Critical"
-			}
-		case .notApplicable:
-			filter = { (a) -> Bool in
-				a.criticalFlag == "Not Applicable"
-			}
-		}
-		// after filtering, sort
-		let filtered = violations.filter(filter).sorted { $0.dba < $1.dba }
-		return filtered
-	}
-
 }
