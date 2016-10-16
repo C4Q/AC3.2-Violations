@@ -8,22 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		1EE6D1321DB2D7B0006EBDBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE6D1311DB2D7B0006EBDBF /* AppDelegate.swift */; };
-		1EE6D1341DB2D7B0006EBDBF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE6D1331DB2D7B0006EBDBF /* ViewController.swift */; };
 		1EE6D1371DB2D7B0006EBDBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EE6D1351DB2D7B0006EBDBF /* Main.storyboard */; };
 		1EE6D1391DB2D7B0006EBDBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EE6D1381DB2D7B0006EBDBF /* Assets.xcassets */; };
 		1EE6D13C1DB2D7B0006EBDBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EE6D13A1DB2D7B0006EBDBF /* LaunchScreen.storyboard */; };
 		1EE6D1441DB2D7C4006EBDBF /* violations.json in Resources */ = {isa = PBXBuildFile; fileRef = 1EE6D1431DB2D7C4006EBDBF /* violations.json */; };
+		9E2EF26A1DB3564E007A5D3C /* Violation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2EF2691DB3564E007A5D3C /* Violation.swift */; };
+		9E2EF26E1DB358EA007A5D3C /* ViolationsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2EF26D1DB358EA007A5D3C /* ViolationsTableViewController.swift */; };
+		9E2EF2701DB35979007A5D3C /* ViolationsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2EF26F1DB35979007A5D3C /* ViolationsTableViewCell.swift */; };
+		9E2EF2721DB359AF007A5D3C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2EF2711DB359AF007A5D3C /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1EE6D12E1DB2D7B0006EBDBF /* AC3.2-Violations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AC3.2-Violations.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EE6D1311DB2D7B0006EBDBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1EE6D1331DB2D7B0006EBDBF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1EE6D1361DB2D7B0006EBDBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1EE6D1381DB2D7B0006EBDBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1EE6D13B1DB2D7B0006EBDBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1EE6D13D1DB2D7B0006EBDBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1EE6D1431DB2D7C4006EBDBF /* violations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = violations.json; sourceTree = "<group>"; };
+		9E2EF2691DB3564E007A5D3C /* Violation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Violation.swift; sourceTree = "<group>"; };
+		9E2EF26D1DB358EA007A5D3C /* ViolationsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViolationsTableViewController.swift; sourceTree = "<group>"; };
+		9E2EF26F1DB35979007A5D3C /* ViolationsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViolationsTableViewCell.swift; sourceTree = "<group>"; };
+		9E2EF2711DB359AF007A5D3C /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,12 +63,15 @@
 		1EE6D1301DB2D7B0006EBDBF /* AC3.2-Violations */ = {
 			isa = PBXGroup;
 			children = (
+				1EE6D13D1DB2D7B0006EBDBF /* Info.plist */,
 				1EE6D1311DB2D7B0006EBDBF /* AppDelegate.swift */,
-				1EE6D1331DB2D7B0006EBDBF /* ViewController.swift */,
-				1EE6D1351DB2D7B0006EBDBF /* Main.storyboard */,
+				9E2EF2711DB359AF007A5D3C /* DetailViewController.swift */,
+				9E2EF2691DB3564E007A5D3C /* Violation.swift */,
+				9E2EF26F1DB35979007A5D3C /* ViolationsTableViewCell.swift */,
+				9E2EF26D1DB358EA007A5D3C /* ViolationsTableViewController.swift */,
 				1EE6D1381DB2D7B0006EBDBF /* Assets.xcassets */,
 				1EE6D13A1DB2D7B0006EBDBF /* LaunchScreen.storyboard */,
-				1EE6D13D1DB2D7B0006EBDBF /* Info.plist */,
+				1EE6D1351DB2D7B0006EBDBF /* Main.storyboard */,
 			);
 			path = "AC3.2-Violations";
 			sourceTree = "<group>";
@@ -140,8 +149,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1EE6D1341DB2D7B0006EBDBF /* ViewController.swift in Sources */,
 				1EE6D1321DB2D7B0006EBDBF /* AppDelegate.swift in Sources */,
+				9E2EF26A1DB3564E007A5D3C /* Violation.swift in Sources */,
+				9E2EF2721DB359AF007A5D3C /* DetailViewController.swift in Sources */,
+				9E2EF26E1DB358EA007A5D3C /* ViolationsTableViewController.swift in Sources */,
+				9E2EF2701DB35979007A5D3C /* ViolationsTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +315,7 @@
 				1EE6D1421DB2D7B0006EBDBF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
