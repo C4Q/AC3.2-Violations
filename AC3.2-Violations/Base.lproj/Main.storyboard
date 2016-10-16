@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -67,8 +68,77 @@
                     <view key="view" contentMode="scaleToFill" id="Cbc-26-J8J">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DBA Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mhs-kA-9we">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sqy-Ux-76m">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cuisine Type Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WuL-Z1-Yuh">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Inspection Date Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0aT-5l-SWj">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Inspection Type Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2gb-8S-5cx">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Violation Code Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tvn-iB-vvX">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Violaton Summary Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eyl-dV-YVO">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eyl-dV-YVO" firstAttribute="top" secondItem="tvn-iB-vvX" secondAttribute="bottom" id="562-Q4-2tI"/>
+                            <constraint firstItem="tvn-iB-vvX" firstAttribute="leading" secondItem="Cbc-26-J8J" secondAttribute="leadingMargin" id="68W-Kp-hXp"/>
+                            <constraint firstItem="0aT-5l-SWj" firstAttribute="leading" secondItem="Cbc-26-J8J" secondAttribute="leadingMargin" id="AaI-Ti-EVP"/>
+                            <constraint firstItem="Sqy-Ux-76m" firstAttribute="top" secondItem="mhs-kA-9we" secondAttribute="bottom" id="BUQ-2u-juL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="mhs-kA-9we" secondAttribute="trailing" id="IAd-o2-FXm"/>
+                            <constraint firstItem="mhs-kA-9we" firstAttribute="leading" secondItem="Cbc-26-J8J" secondAttribute="leadingMargin" id="MoQ-TK-m3x"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Sqy-Ux-76m" secondAttribute="trailing" id="PR2-1b-U46"/>
+                            <constraint firstItem="eyl-dV-YVO" firstAttribute="leading" secondItem="Cbc-26-J8J" secondAttribute="leadingMargin" id="R2Q-Mc-mJ0"/>
+                            <constraint firstItem="WuL-Z1-Yuh" firstAttribute="leading" secondItem="Cbc-26-J8J" secondAttribute="leadingMargin" id="XUn-95-Rsw"/>
+                            <constraint firstItem="Sqy-Ux-76m" firstAttribute="leading" secondItem="Cbc-26-J8J" secondAttribute="leadingMargin" id="aTE-r9-Pkv"/>
+                            <constraint firstItem="mhs-kA-9we" firstAttribute="top" secondItem="wKm-SV-JV0" secondAttribute="bottom" constant="12" id="c39-0u-DcF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0aT-5l-SWj" secondAttribute="trailing" id="dRC-dP-l8b"/>
+                            <constraint firstItem="WuL-Z1-Yuh" firstAttribute="top" secondItem="Sqy-Ux-76m" secondAttribute="bottom" id="dZ1-V1-Y0d"/>
+                            <constraint firstItem="0aT-5l-SWj" firstAttribute="top" secondItem="WuL-Z1-Yuh" secondAttribute="bottom" constant="18" id="duf-AX-Ryx"/>
+                            <constraint firstItem="2gb-8S-5cx" firstAttribute="top" secondItem="0aT-5l-SWj" secondAttribute="bottom" id="ftp-pz-yOj"/>
+                            <constraint firstItem="tvn-iB-vvX" firstAttribute="top" secondItem="2gb-8S-5cx" secondAttribute="bottom" constant="18" id="nd3-Vz-S0G"/>
+                            <constraint firstItem="2gb-8S-5cx" firstAttribute="trailing" secondItem="Cbc-26-J8J" secondAttribute="trailingMargin" id="odT-Ls-eT4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="WuL-Z1-Yuh" secondAttribute="trailing" id="rxt-bo-gbr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="eyl-dV-YVO" secondAttribute="trailing" id="tOl-lQ-GLj"/>
+                            <constraint firstItem="2gb-8S-5cx" firstAttribute="leading" secondItem="Cbc-26-J8J" secondAttribute="leadingMargin" id="uaG-LJ-h2I"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="tvn-iB-vvX" secondAttribute="trailing" id="vot-sE-3kt"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="addressLabel" destination="Sqy-Ux-76m" id="p8M-yi-n1d"/>
+                        <outlet property="cuisineTypeLabel" destination="WuL-Z1-Yuh" id="7a2-8y-3dj"/>
+                        <outlet property="inspectionDateLabel" destination="0aT-5l-SWj" id="6eP-UQ-WrT"/>
+                        <outlet property="inspectionTypeLabel" destination="2gb-8S-5cx" id="O8P-s2-vEq"/>
+                        <outlet property="nameLabel" destination="mhs-kA-9we" id="bUC-z9-xda"/>
+                        <outlet property="violationCodeLabel" destination="tvn-iB-vvX" id="FBM-NI-u8v"/>
+                        <outlet property="violationSummaryLabel" destination="eyl-dV-YVO" id="r0h-WU-h6E"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y4l-yw-rhH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

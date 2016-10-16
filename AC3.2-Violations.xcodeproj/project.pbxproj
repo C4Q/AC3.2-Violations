@@ -63,15 +63,15 @@
 		1EE6D1301DB2D7B0006EBDBF /* AC3.2-Violations */ = {
 			isa = PBXGroup;
 			children = (
-				1EE6D13D1DB2D7B0006EBDBF /* Info.plist */,
 				1EE6D1311DB2D7B0006EBDBF /* AppDelegate.swift */,
+				1EE6D1381DB2D7B0006EBDBF /* Assets.xcassets */,
 				9E2EF2711DB359AF007A5D3C /* DetailViewController.swift */,
+				1EE6D13D1DB2D7B0006EBDBF /* Info.plist */,
+				1EE6D13A1DB2D7B0006EBDBF /* LaunchScreen.storyboard */,
+				1EE6D1351DB2D7B0006EBDBF /* Main.storyboard */,
 				9E2EF2691DB3564E007A5D3C /* Violation.swift */,
 				9E2EF26F1DB35979007A5D3C /* ViolationsTableViewCell.swift */,
 				9E2EF26D1DB358EA007A5D3C /* ViolationsTableViewController.swift */,
-				1EE6D1381DB2D7B0006EBDBF /* Assets.xcassets */,
-				1EE6D13A1DB2D7B0006EBDBF /* LaunchScreen.storyboard */,
-				1EE6D1351DB2D7B0006EBDBF /* Main.storyboard */,
 			);
 			path = "AC3.2-Violations";
 			sourceTree = "<group>";
