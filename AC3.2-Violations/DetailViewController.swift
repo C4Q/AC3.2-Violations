@@ -22,11 +22,11 @@ class DetailViewController: UIViewController {
 	@IBOutlet weak var violationCodeLabel: UILabel!
 	@IBOutlet weak var violationSummaryLabel: UILabel!
 	
-    override func viewDidLoad() {
-        super.viewDidLoad()
+	override func viewDidLoad() {
+		super.viewDidLoad()
 		loadData(for: selectedIncident)
 	}
-
+	
 	func loadData(for incident: Violation) {
 		self.nameLabel.text = incident.dba
 		self.addressLabel.text = incident.address
@@ -38,7 +38,10 @@ class DetailViewController: UIViewController {
 		self.inspectionDateLabel.text = "Inspection Date: \(incident.dateInMMDDYYYY(for: incident.inspectionDate))"
 		self.inspectionTypeLabel.text = "Inspection Type: \(incident.inspectionType)"
 		
-		self.violationCodeLabel.text = "Violation Code: \(incident.violationCode)"
+		self.violationCodeLabel.text = "Violation Code: \(incident.violationCode) -- \(incident.criticalFlag)"
+		if incident.criticalFlag == "Critical" {
+			self.violationCodeLabel.textColor = .red
+		}
 		
 		// Brute forcing some annoying text errors
 		let newSum = incident.violationDesc.replacingOccurrences(of: "Â", with: "", options: .regularExpression, range: nil)
