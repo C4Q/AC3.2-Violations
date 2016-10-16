@@ -54,11 +54,11 @@ class ViolationsTableViewController: UITableViewController {
 
 		cell.nameLabel.text = "Violation Code: \(data.violationCode) -- \(data.criticalFlag)"
 		cell.infoLabel.text = data.dateInMMDDYYYY(for: data.inspectionDate)
-		if data.criticalFlag == "Critical" {
-			cell.nameLabel.backgroundColor = .clear
-			cell.infoLabel.backgroundColor = .clear
-			cell.backgroundColor = UIColor(red: 1, green: 0, blue: 0, alpha: 0.2)
-		}
+//		if data.criticalFlag == "Critical" {
+//			cell.nameLabel.backgroundColor = .clear
+//			cell.infoLabel.backgroundColor = .clear
+//			cell.backgroundColor = UIColor(red: 1, green: 0, blue: 0, alpha: 0.2)
+//		}
 		return cell
 	}
 	
