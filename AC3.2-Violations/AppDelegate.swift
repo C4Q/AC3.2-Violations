@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  AC3.2-Violations
 //
-//  Created by Jason Gresh on 10/15/16.
-//  Copyright © 2016 C4Q. All rights reserved.
+//  Created by Harichandan Singh on 10/16/16.
+//  Copyright © 2016 Harichandan Singh. All rights reserved.
 //
 
 import UIKit
