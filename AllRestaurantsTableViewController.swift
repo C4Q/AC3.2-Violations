@@ -20,11 +20,14 @@ class AllRestaurantsTableViewController: UITableViewController {
         }
         
         if let violations = violationsJSON as? [[String:String]] {
-            for (index,violationDict) in violations.enumerated() {
-                let ep = Violations(withDict: violationDict)
-                print(index)
-                self.restaurants.append(ep)
-            }
+            self.restaurants = violations.flatMap({ Violations(withDict: $0)})
+            
+//            for (index,violationDict) in violations.enumerated() {
+//                if let ep = Violations(withDict: violationDict) {
+//                print(index)
+//                self.restaurants.append(ep)
+//            }
+//            }
         }
     }
 
