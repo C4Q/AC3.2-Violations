@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "8605BDEF8EF70E1DC59D485FF9F72D691F929725",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "3CCF31241C04A46A70B2ED63F3F9B754376D6710" : 9223372036854775807,
+    "8605BDEF8EF70E1DC59D485FF9F72D691F929725" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "E74E2DDA-8019-4D69-97B9-8CD29AB166F0",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "3CCF31241C04A46A70B2ED63F3F9B754376D6710" : "",
+    "8605BDEF8EF70E1DC59D485FF9F72D691F929725" : "AC3.2-Violations\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "AC3.2-Violations",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "AC3.2-Violations.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/cristopherchavezny\/AC3.2.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3CCF31241C04A46A70B2ED63F3F9B754376D6710"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:cristopherchavezny\/AC3.2-Violations.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8605BDEF8EF70E1DC59D485FF9F72D691F929725"
+    }
+  ]
+}
