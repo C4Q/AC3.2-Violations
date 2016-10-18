@@ -13,6 +13,8 @@
 		1EE6D1391DB2D7B0006EBDBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EE6D1381DB2D7B0006EBDBF /* Assets.xcassets */; };
 		1EE6D13C1DB2D7B0006EBDBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EE6D13A1DB2D7B0006EBDBF /* LaunchScreen.storyboard */; };
 		1EE6D1441DB2D7C4006EBDBF /* violations.json in Resources */ = {isa = PBXBuildFile; fileRef = 1EE6D1431DB2D7C4006EBDBF /* violations.json */; };
+		A22A00011DB3FC9B00D05E0B /* Violations.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22A00001DB3FC9B00D05E0B /* Violations.swift */; };
+		A22A00031DB4004E00D05E0B /* ViolationsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22A00021DB4004E00D05E0B /* ViolationsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		1EE6D13B1DB2D7B0006EBDBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1EE6D13D1DB2D7B0006EBDBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1EE6D1431DB2D7C4006EBDBF /* violations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = violations.json; sourceTree = "<group>"; };
+		A22A00001DB3FC9B00D05E0B /* Violations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Violations.swift; sourceTree = "<group>"; };
+		A22A00021DB4004E00D05E0B /* ViolationsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViolationsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 			children = (
 				1EE6D1311DB2D7B0006EBDBF /* AppDelegate.swift */,
 				1EE6D1331DB2D7B0006EBDBF /* ViewController.swift */,
+				A22A00021DB4004E00D05E0B /* ViolationsTableViewController.swift */,
+				A22A00001DB3FC9B00D05E0B /* Violations.swift */,
 				1EE6D1351DB2D7B0006EBDBF /* Main.storyboard */,
 				1EE6D1381DB2D7B0006EBDBF /* Assets.xcassets */,
 				1EE6D13A1DB2D7B0006EBDBF /* LaunchScreen.storyboard */,
@@ -141,7 +147,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1EE6D1341DB2D7B0006EBDBF /* ViewController.swift in Sources */,
+				A22A00031DB4004E00D05E0B /* ViolationsTableViewController.swift in Sources */,
 				1EE6D1321DB2D7B0006EBDBF /* AppDelegate.swift in Sources */,
+				A22A00011DB3FC9B00D05E0B /* Violations.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +311,7 @@
 				1EE6D1421DB2D7B0006EBDBF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
